@@ -1,0 +1,8 @@
+export const fpoOrders = [
+  { id: "FPO-001", crop: "tomato", buyer: "Maharashtra FPO Collective", qtyKg: 10000, pricePerKg: 48, marketPrice: 22, deliveryStart: "2024-05-10", deliveryEnd: "2024-05-20", warehouse: "Nashik Central", slotsTotal: 10, slotsFilled: 7, bonusPerKg: 3, bonusCondition: "Early delivery before May 12" },
+  { id: "FPO-002", crop: "onion", buyer: "Pune Agri Exports Ltd", qtyKg: 25000, pricePerKg: 18, marketPrice: 8, deliveryStart: "2024-06-01", deliveryEnd: "2024-06-15", warehouse: "Pune APMC", slotsTotal: 20, slotsFilled: 12, bonusPerKg: 1, bonusCondition: "Moisture < 12%" },
+  { id: "FPO-003", crop: "wheat", buyer: "Central Govt FCI", qtyKg: 50000, pricePerKg: 22.5, marketPrice: 19, deliveryStart: "2024-04-25", deliveryEnd: "2024-05-05", warehouse: "Nagpur Grain Depot", slotsTotal: 50, slotsFilled: 31, bonusPerKg: 0, bonusCondition: null },
+  { id: "FPO-004", crop: "cotton", buyer: "Vidarbha Cotton Co-op", qtyKg: 8000, pricePerKg: 65, marketPrice: 52, deliveryStart: "2024-11-01", deliveryEnd: "2024-11-30", warehouse: "Amravati", slotsTotal: 8, slotsFilled: 2, bonusPerKg: 5, bonusCondition: "Staple length > 29mm" },
+  { id: "FPO-005", crop: "soybean", buyer: "Indore Oilseed FPO", qtyKg: 15000, pricePerKg: 42, marketPrice: 38, deliveryStart: "2024-10-15", deliveryEnd: "2024-10-31", warehouse: "Indore", slotsTotal: 15, slotsFilled: 9, bonusPerKg: 2, bonusCondition: "Protein > 38%" },
+  { id: "FPO-006", crop: "tomato", buyer: "Reliance Retail Agri", qtyKg: 20000, pricePerKg: 52, marketPrice: 22, deliveryStart: "2024-05-20", deliveryEnd: "2024-06-05", warehouse: "Mumbai Cold Storage", slotsTotal: 5, slotsFilled: 1, bonusPerKg: 8, bonusCondition: "Brix > 5.5, delivery packaged" }
+];

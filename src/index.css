@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes healthPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 158, 117, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(29, 158, 117, 0.15);
+  }
+}
+
+@layer base {
+  :root {
+    --skeleton-base: #f0f0f0;
+    --skeleton-highlight: #e0e0e0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --skeleton-base: #2a2a2a;
+      --skeleton-highlight: #3a3a3a;
+    }
+  }
+
+  body {
+    @apply bg-km-gray-light text-gray-800 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      var(--skeleton-base) 25%,
+      var(--skeleton-highlight) 50%,
+      var(--skeleton-base) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.4s ease-in-out infinite;
+  }
+
+  .health-pulse {
+    animation: healthPulse 3s ease-in-out infinite;
+  }
+
+  .hidden-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
