@@ -1,6 +1,6 @@
 # Krishi Mitra v1
 
-**India's first Risk-Free Farmer OS**
+**India's first Risk-Free Farmer Support System**
 
 Krishi Mitra (Farmer's Friend) is an application designed to transform smallholder agriculture into a guaranteed-profit profession. By combining forward FPO contracts, real-time satellite insights, and financial tracking, the app entirely de-risks farming for low-resource farmers.
 
